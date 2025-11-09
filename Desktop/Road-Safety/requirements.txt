@@ -1,0 +1,29 @@
+# Environment Management
+python-dotenv>=1.0.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning & Search
+scikit-learn>=1.3.0
+rapidfuzz>=3.0.0
+
+# Backend Framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Frontend Framework
+streamlit>=1.28.0
+
+# Optional: OpenAI Integration (for RAG)
+openai>=1.0.0
+
+# Testing
+pytest>=7.4.0
+
+# Additional utilities
+requests>=2.31.0
+
+# Optional: PDF Report Generation
+# reportlab>=4.0.0
