@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_afe69edce7873f35d6e987bc07946356 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_afe69edce7873f35d6e987bc07946356" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_afe69edce7873f35d6e987bc07946356 = L.map(
+                "map_afe69edce7873f35d6e987bc07946356",
+                {
+                    center: [22.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5.2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b594836ad216db846b7f02799ddee409 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b594836ad216db846b7f02799ddee409.addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+            var circle_marker_e2718b7b3ed1710404840b15b325f1b2 = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.043874890532125, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_779d8fc60a47a2753aa4923cd6f0deaf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0599fa13a6e01943431cc4cc7fa42803 = $(`<div id="html_0599fa13a6e01943431cc4cc7fa42803" style="width: 100.0%; height: 100.0%;">     <b>Bengaluru</b><br>     Population (2015): 12,087,749.78106425<br>     Predicted Population (2031): 26,664,048.90532112<br>     Built-up Area 2015: 823.40 km²<br>     Predicted Built-up 2031: 829.40 km²<br>     Built-up Change: 0.7%<br>     Density (2015): 13347 per km²<br>     Predicted Density (2031): 29441 per km²<br>     Cluster: 2     </div>`)[0];
+                popup_779d8fc60a47a2753aa4923cd6f0deaf.setContent(html_0599fa13a6e01943431cc4cc7fa42803);
+            
+        
+
+        circle_marker_e2718b7b3ed1710404840b15b325f1b2.bindPopup(popup_779d8fc60a47a2753aa4923cd6f0deaf)
+        ;
+
+        
+    
+    
+            var circle_marker_6c93b34763b22c9c8f5bcff9181fc181 = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_634fa46efefa547269ab03ce14fcafbc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b9d4705366ec26dcc89cba0ad5dea81 = $(`<div id="html_6b9d4705366ec26dcc89cba0ad5dea81" style="width: 100.0%; height: 100.0%;">     <b>Chennai</b><br>     Population (2015): 5,112,621.690699452<br>     Predicted Population (2031): 6,976,180.453497261<br>     Built-up Area 2015: 154.83 km²<br>     Predicted Built-up 2031: 156.43 km²<br>     Built-up Change: 1.0%<br>     Density (2015): 29131 per km²<br>     Predicted Density (2031): 39750 per km²<br>     Cluster: 0     </div>`)[0];
+                popup_634fa46efefa547269ab03ce14fcafbc.setContent(html_6b9d4705366ec26dcc89cba0ad5dea81);
+            
+        
+
+        circle_marker_6c93b34763b22c9c8f5bcff9181fc181.bindPopup(popup_634fa46efefa547269ab03ce14fcafbc)
+        ;
+
+        
+    
+    
+            var circle_marker_e538573f5b7fc1315a413cd6183b5f7d = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.91150971463471, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_6103187455b8797995b614ec84a49e75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_64ad9ff69e28ed350cd1cf11b987e687 = $(`<div id="html_64ad9ff69e28ed350cd1cf11b987e687" style="width: 100.0%; height: 100.0%;">     <b>Delhi</b><br>     Population (2015): 13,823,019.42926942<br>     Predicted Population (2031): 23,504,261.14634705<br>     Built-up Area 2015: 824.43 km²<br>     Predicted Built-up 2031: 1105.39 km²<br>     Built-up Change: 34.1%<br>     Density (2015): 19286 per km²<br>     Predicted Density (2031): 32793 per km²<br>     Cluster: 2     </div>`)[0];
+                popup_6103187455b8797995b614ec84a49e75.setContent(html_64ad9ff69e28ed350cd1cf11b987e687);
+            
+        
+
+        circle_marker_e538573f5b7fc1315a413cd6183b5f7d.bindPopup(popup_6103187455b8797995b614ec84a49e75)
+        ;
+
+        
+    
+    
+            var circle_marker_7305949498c3cb6636f424b6b9f44107 = L.circleMarker(
+                [26.9124, 75.7873],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_29d352b7299ffff3659d0d85fefb71a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5429cf6924cbbf6c86867cf92206604e = $(`<div id="html_5429cf6924cbbf6c86867cf92206604e" style="width: 100.0%; height: 100.0%;">     <b>Jaipur</b><br>     Population (2015): 4,327,579.934365438<br>     Predicted Population (2031): 9,453,247.671827197<br>     Built-up Area 2015: 344.38 km²<br>     Predicted Built-up 2031: 423.38 km²<br>     Built-up Change: 22.9%<br>     Density (2015): 5545 per km²<br>     Predicted Density (2031): 12114 per km²<br>     Cluster: 1     </div>`)[0];
+                popup_29d352b7299ffff3659d0d85fefb71a0.setContent(html_5429cf6924cbbf6c86867cf92206604e);
+            
+        
+
+        circle_marker_7305949498c3cb6636f424b6b9f44107.bindPopup(popup_29d352b7299ffff3659d0d85fefb71a0)
+        ;
+
+        
+    
+    
+            var circle_marker_96f1d89e3fa96a6664a4511aa5cb4a8a = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_6a20f49ed2b271116caaae0c40bb5950 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad5cf029718fa429dceffa0c2b738382 = $(`<div id="html_ad5cf029718fa429dceffa0c2b738382" style="width: 100.0%; height: 100.0%;">     <b>Kolkata</b><br>     Population (2015): 4,547,888.621293287<br>     Predicted Population (2031): 4,752,667.106466435<br>     Built-up Area 2015: 99.06 km²<br>     Predicted Built-up 2031: 97.86 km²<br>     Built-up Change: -1.2%<br>     Density (2015): 24583 per km²<br>     Predicted Density (2031): 25690 per km²<br>     Cluster: 0     </div>`)[0];
+                popup_6a20f49ed2b271116caaae0c40bb5950.setContent(html_ad5cf029718fa429dceffa0c2b738382);
+            
+        
+
+        circle_marker_96f1d89e3fa96a6664a4511aa5cb4a8a.bindPopup(popup_6a20f49ed2b271116caaae0c40bb5950)
+        ;
+
+        
+    
+    
+            var circle_marker_8ecfdf21b9177d8fd5613940b7bdda46 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_e2b2bd46a9182baeb8f9ab29520e8c80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_301b7cd6111e920f9afafb7f1757256d = $(`<div id="html_301b7cd6111e920f9afafb7f1757256d" style="width: 100.0%; height: 100.0%;">     <b>Lucknow</b><br>     Population (2015): 3,716,918.399616849<br>     Predicted Population (2031): 7,316,171.998084247<br>     Built-up Area 2015: 324.24 km²<br>     Predicted Built-up 2031: 330.92 km²<br>     Built-up Change: 2.1%<br>     Density (2015): 10030 per km²<br>     Predicted Density (2031): 19743 per km²<br>     Cluster: 1     </div>`)[0];
+                popup_e2b2bd46a9182baeb8f9ab29520e8c80.setContent(html_301b7cd6111e920f9afafb7f1757256d);
+            
+        
+
+        circle_marker_8ecfdf21b9177d8fd5613940b7bdda46.bindPopup(popup_e2b2bd46a9182baeb8f9ab29520e8c80)
+        ;
+
+        
+    
+    
+            var circle_marker_0fa5c00847ba8618add3476a6a7d8cf8 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.98489372560833, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_ea20c2c05f497efe292fcfb240b16f37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_796a9b2b2844508efd259a83dd343075 = $(`<div id="html_796a9b2b2844508efd259a83dd343075" style="width: 100.0%; height: 100.0%;">     <b>Mumbai</b><br>     Population (2015): 13,969,787.45121666<br>     Predicted Population (2031): 20,079,445.25608325<br>     Built-up Area 2015: 65.64 km²<br>     Predicted Built-up 2031: 65.60 km²<br>     Built-up Change: -0.1%<br>     Density (2015): 20207 per km²<br>     Predicted Density (2031): 29044 per km²<br>     Cluster: 0     </div>`)[0];
+                popup_ea20c2c05f497efe292fcfb240b16f37.setContent(html_796a9b2b2844508efd259a83dd343075);
+            
+        
+
+        circle_marker_0fa5c00847ba8618add3476a6a7d8cf8.bindPopup(popup_ea20c2c05f497efe292fcfb240b16f37)
+        ;
+
+        
+    
+    
+            var circle_marker_dec035c832d70edb1e270eb8772dd699 = L.circleMarker(
+                [23.3441, 85.3096],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+    
+        var popup_b32ab3d4929f3b1c82761e93c63c8740 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ada3260c9914c4c0c88c50cf45cff360 = $(`<div id="html_ada3260c9914c4c0c88c50cf45cff360" style="width: 100.0%; height: 100.0%;">     <b>Ranchi</b><br>     Population (2015): 1,438,738.706674205<br>     Predicted Population (2031): 2,899,985.533371031<br>     Built-up Area 2015: 209.01 km²<br>     Predicted Built-up 2031: 209.21 km²<br>     Built-up Change: 0.1%<br>     Density (2015): 8264 per km²<br>     Predicted Density (2031): 16657 per km²<br>     Cluster: 1     </div>`)[0];
+                popup_b32ab3d4929f3b1c82761e93c63c8740.setContent(html_ada3260c9914c4c0c88c50cf45cff360);
+            
+        
+
+        circle_marker_dec035c832d70edb1e270eb8772dd699.bindPopup(popup_b32ab3d4929f3b1c82761e93c63c8740)
+        ;
+
+        
+    
+    
+            var heat_map_8235a190ecb041e14255947c06aaed1d = L.heatLayer(
+                [[12.9716, 77.5946, 29440.97878156144], [13.0827, 80.2707, 39749.6651300376], [28.6139, 77.209, 32793.42379566855], [26.9124, 75.7873, 12113.57642502828], [22.5726, 88.3639, 25689.52842078367], [26.8467, 80.9462, 19743.29728556077], [19.076, 72.8777, 29044.00487912651], [23.3441, 85.3096, 16657.28882898981]],
+                {
+  "minOpacity": 0.4,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_8235a190ecb041e14255947c06aaed1d.addTo(map_afe69edce7873f35d6e987bc07946356);
+        
+</script>
+</html>
