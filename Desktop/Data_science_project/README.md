@@ -389,16 +389,6 @@ python -c "import cv2, pandas, sklearn, folium; print('All packages installed su
 
 ---
 
-## 👥 Team Members
-
-| Role | Name | Roll No |
-|------|------|---------|
-| **Member** | Gyan Chandra | CS23I1053 |
-| **Member** | Sharad Kumar Dubey | CS23I1052 |
-| **Member** | Vishal Singh | CS23I1039 |
-| **Member** | Suvam Sahu | CS23I1038 |
-
----
 
 ## 🔮 Future Work
 
